@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello Frog</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    #frog {
+      margin-top: 20px;
+      display: none;
+      max-width: 300px;
+    }
+    button {
+      font-size: 18px;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <button id="helloBtn">hello</button>
+
+  <img
+    id="frog"
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Red-eyed_Leaf_Frog_%2849661076226%29.jpg/250px-Red-eyed_Leaf_Frog_%2849661076226%29.jpg"
+    alt="A frog"
+  />
+
+  <script>
+    const btn = document.getElementById('helloBtn');
+    const frog = document.getElementById('frog');
+
+    btn.addEventListener('click', () => {
+      frog.style.display = 'block';
+    });
+  </script>
+</body>
+</html>
